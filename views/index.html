@@ -2,333 +2,336 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Realar Living Solutions</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <link rel="stylesheet" href="../styles/main.css">
-  <link rel="icon" type="image/png" href="../images/companyLogo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles/main.css" />
+  <link rel="icon" type="image/png" href="../images/companyLogo.png" />
 </head>
 <body>
 
-<header class="navbar">
-  <div class="logo">
-    <img src="../images/companyLogo.png" alt="Logo" height="50">
-    <div class="logo-text">
-      <strong>REALAR</strong>
-      <span>Living Solutions</span>
+
+<header class="navbar navbar-expand-lg custom-navbar">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center logo" href="#">
+      <img src="../images/companyLogo.png" alt="Logo" height="50">
+      <div class="logo-text ms-2">
+        <strong>REALAR</strong>
+        <span>Living Solutions</span>
+      </div>
+    </a>
+
+    <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-start align-items-lg-center gap-2">
+        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Properties</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="for-sale.html">For Sale</a></li>
+            <li><a class="dropdown-item" href="forRent.html">For Rent</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Agencies</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="agencies.html">List of Agencies</a></li>
+            <li><a class="dropdown-item" href="join-agency.html">Join as Agency</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Pages</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="services.html">Services</a></li>
+            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Blog</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="latest-news.html">Latest News</a></li>
+            <li><a class="dropdown-item" href="tips-guides.html">Tips & Guides</a></li>
+          </ul>
+        </li>
+
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+      </ul>
+
+      <a href="contact.html" class="btn btn-yellow ms-lg-4 mt-3 mt-lg-0">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
     </div>
   </div>
-  <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden />
-    <label for="menu-toggle" class="hamburger">
-    <i class="fa-solid fa-bars"></i>
-  </label>
-  
-  <nav class="nav-links" id="navMenu">
-    <div class="dropdown">
-      <a href="index.html">Home</a>
-    </div>
-    <div class="dropdown">
-      <a href="about.html">About Us</a>
-    </div>
-    <div class="dropdown">
-      <a href="#">Properties <i class="fa-solid fa-angle-down"></i></a>
-      <div class="dropdown-menu">
-        <a href="for-sale.html">For Sale</a>
-        <a href="forRent.html">For Rent</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <a href="#">Agencies <i class="fa-solid fa-angle-down"></i></a>
-      <div class="dropdown-menu">
-        <a href="agencies.html">List of Agencies</a>
-        <a href="join-agency.html">Join as Agency</a>
-      </div>
-    </div>
-  <div class="dropdown">
-    <a href="#">Pages <i class="fa-solid fa-angle-down"></i></a>
-    <div class="dropdown-menu">
-      <a href="services.html">Services</a>
-      <a href="faq.html">FAQ</a>
-      <a href="careers.html">Careers</a>
-    </div>
-  </div>
-
-    <div class="dropdown">
-      <a href="#">Blog <i class="fa-solid fa-angle-down"></i></a>
-      <div class="dropdown-menu">
-        <a href="latest-news.html">Latest News</a>
-        <a href="tips-guides.html">Tips & Guides</a>
-      </div>
-    </div>
-    <div class="dropdown">
-      <a href="contact.html">Contact Us</a>
-    </div>
-  </nav>
-
-  <a href="contact.html" class="btn-yellow">Contact Us <i class="fa-solid fa-arrow-right"></i></a>
-
 </header>
 
-  <section class="hero">
-    <div class="hero-bg bg1"></div>
-    <div class="hero-bg bg2"></div>
-    <div class="hero-bg bg3"></div>
-    <div class="hero-bg bg4"></div>
 
-    <div class="hero-content">
-      <h1>Elevate Lifestyle<br>Luxury Meets Comfort</h1>
-      <p>Bringing together a team with passion, dedication, and resources to help our clients reach their buying and selling goals. We are with you every step of the way.</p>
-      <div class="hero-buttons">
-        <a href="for-sale.html" class="btn-yellow">Explore Properties <i class="fa-solid fa-arrow-right"></i></a>
-      </div>
-    </div>
-    <div class="scroll-indicator">
-      Scroll <br><i class="fa-solid fa-arrow-down"></i>
-    </div>
-    <div class="slider-dots">
-      <span class="dot active"></span>
-      <span class="dot"></span>
-      <span class="dot"></span>
-    </div>
-  </section>
-  <section class="stats">
-    <div>
-      <h2>850+</h2>
-      <p>Elegant Apartments</p>
-    </div>
-    <div>
-      <h2>950+</h2>
-      <p>Luxury Houses</p>
-    </div>
-    <div>
-      <h2>18k+</h2>
-      <p>Satisfied Guests</p>
-    </div>
-    <div>
-      <h2>2k+</h2>
-      <p>Happy Owners</p>
-    </div>
-  </section>
-<section class="home-section services alt-bg">
-  <h2 class="section-title">What We Offer</h2>
-  <div class="service-list">
+<section class="hero position-relative text-white d-flex align-items-center" style="height: 90vh; border-radius: 0 0 20px 20px; overflow: hidden;">
+  <div class="hero-bg bg1 position-absolute top-0 start-0 w-100 h-100"></div>
+  <div class="hero-bg bg2 position-absolute top-0 start-0 w-100 h-100"></div>
+  <div class="hero-bg bg3 position-absolute top-0 start-0 w-100 h-100"></div>
+  <div class="hero-bg bg4 position-absolute top-0 start-0 w-100 h-100"></div>
 
-    <div class="service-item">
-      <div class="service-icon">
-        <i class="fa-solid fa-house-circle-check"></i>
-      </div>
-      <div class="service-text">
-        <h3>Buy Properties</h3>
-        <p>Premium listings tailored to your lifestyle and needs.</p>
-      </div>
-    </div>
+  <div class="hero-overlay position-absolute top-0 start-0 w-100 h-100" style="background: rgba(0,0,0,0.5); z-index:1;"></div>
 
-    <div class="service-item">
-      <div class="service-icon">
-        <i class="fa-solid fa-key"></i>
-      </div>
-      <div class="service-text">
-        <h3>Rent Properties</h3>
-        <p>Flexible rental options in top neighborhoods with full support.</p>
-      </div>
-    </div>
+  <div class="container position-relative" style="z-index:2; max-width:700px;">
+    <h1 class="display-1 fw-bold">Elevate Lifestyle<br />Luxury Meets Comfort</h1>
+    <p class="lead my-4">Bringing together a team with passion, dedication, and resources to help our clients reach their buying and selling goals. We are with you every step of the way.</p>
+    <a href="for-sale.html" class="btn btn-warning btn-lg">Explore Properties <i class="fa-solid fa-arrow-right"></i></a>
+  </div>
 
-    <div class="service-item">
-      <div class="service-icon">
-        <i class="fa-solid fa-building-shield"></i>
-      </div>
-      <div class="service-text">
-        <h3>Property Management</h3>
-        <p>End-to-end property care with expert oversight and updates.</p>
-      </div>
-    </div>
+  <div class="scroll-indicator position-absolute text-center text-white" style="top: 50%; right: 30px; writing-mode: vertical-rl; font-size: 13px; z-index: 2;">
+    Scroll <br />
+    <i class="fa-solid fa-arrow-down"></i>
+  </div>
 
+  <div class="slider-dots position-absolute" style="bottom: 20px; right: 30px; z-index: 2;">
+    <span class="dot active"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
   </div>
 </section>
-
-  <section class="home-section featured alt-bg">
-    <h2 class="section-title">Featured Properties</h2>
-    
-    <div class="property-grid">
-      <div class="property-card">
-        <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/448080794.jpg?k=28a305f7e7f64f8d1bc22756f9dbac45c466bad02dd3c44d25574f37a994b213&o=" alt="Property 1">
-        <div class="details">
-          <h3>Elegant Villa</h3>
-          <p>Nablus, 4 Beds, 3 Baths</p>
-          <span class="price">$480,000</span>
+<section class="stats py-5 bg-light text-center">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-3 mb-4">
+        <h2 class="display-5 fw-bold">500+</h2>
+        <p class="text-secondary">Properties Sold</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <h2 class="display-5 fw-bold">120</h2>
+        <p class="text-secondary">Trusted Agencies</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <h2 class="display-5 fw-bold">50+</h2>
+        <p class="text-secondary">Awards Won</p>
+      </div>
+      <div class="col-6 col-md-3 mb-4">
+        <h2 class="display-5 fw-bold">1500+</h2>
+        <p class="text-secondary">Happy Clients</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Our Services</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item d-flex align-items-center p-4 shadow-sm rounded-4">
+          <div class="service-icon bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-house-chimney fa-lg text-dark"></i>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Property Sales</h3>
+            <p class="mb-0 text-muted">Helping you find the perfect home or sell your property at the best price.</p>
+          </div>
         </div>
       </div>
-
-      <div class="property-card">
-        <img src="https://static.propsearch.ae/dubai-locations/riviera-lakeview-apartments-23805_xl.jpg" alt="Property 2">
-        <div class="details">
-          <h3>Lakeview Apartment</h3>
-          <p>Jerusalem, 2 Beds, 2 Baths</p>
-          <span class="price">$280,000</span>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item d-flex align-items-center p-4 shadow-sm rounded-4">
+          <div class="service-icon bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-briefcase fa-lg text-dark"></i>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Consulting</h3>
+            <p class="mb-0 text-muted">Expert advice to guide your real estate decisions confidently.</p>
+          </div>
         </div>
       </div>
-
-      <div class="property-card">
-        <img src="https://iconiclife.com/wp-content/uploads/2023/08/creston-home.jpg" alt="Property 3">
-        <div class="details">
-          <h3>Modern Smart Home</h3>
-          <p>Ramallah, 3 Beds, 2.5 Baths</p>
-          <span class="price">$390,000</span>
+      <div class="col-md-6 col-lg-4">
+        <div class="service-item d-flex align-items-center p-4 shadow-sm rounded-4">
+          <div class="service-icon bg-warning rounded-circle d-flex align-items-center justify-content-center me-3" style="width: 60px; height: 60px;">
+            <i class="fa-solid fa-calendar-check fa-lg text-dark"></i>
+          </div>
+          <div>
+            <h3 class="h5 mb-1">Property Management</h3>
+            <p class="mb-0 text-muted">Managing your properties professionally with care and precision.</p>
+          </div>
         </div>
       </div>
     </div>
+  </div>
+</section>
 
-    <div class="see-more-btn-container">
-      <a href="for-sale.html" class="see-more-btn">See More </a>
+<section class="property-grid py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Featured Properties</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="property-card bg-white shadow rounded-4 overflow-hidden cursor-pointer">
+          <img src="https://q-xx.bstatic.com/xdata/images/hotel/840x460/448080794.jpg?k=28a305f7e7f64f8d1bc22756f9dbac45c466bad02dd3c44d25574f37a994b213&o=" alt="Property 1" class="img-fluid" />
+          <div class="details p-3">
+            <h3 class="h5 mb-2">Modern Family Home</h3>
+            <p class="mb-2 text-muted">4 beds · 3 baths · 2500 sqft</p>
+            <div class="price fw-bold text-warning fs-5">$550,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="property-card bg-white shadow rounded-4 overflow-hidden cursor-pointer">
+          <img src="https://static.propsearch.ae/dubai-locations/riviera-lakeview-apartments-23805_xl.jpg" alt="Property 2" class="img-fluid" />
+          <div class="details p-3">
+            <h3 class="h5 mb-2">Luxury Villa</h3>
+            <p class="mb-2 text-muted">5 beds · 4 baths · 4500 sqft</p>
+            <div class="price fw-bold text-warning fs-5">$1,200,000</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="property-card bg-white shadow rounded-4 overflow-hidden cursor-pointer">
+          <img src="https://iconiclife.com/wp-content/uploads/2023/08/creston-home.jpg" alt="Property 3" class="img-fluid" />
+          <div class="details p-3">
+            <h3 class="h5 mb-2">Cozy Apartment</h3>
+            <p class="mb-2 text-muted">2 beds · 1 bath · 900 sqft</p>
+            <div class="price fw-bold text-warning fs-5">$320,000</div>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
 
-<section class="home-section why-us">
-  <h2 class="section-title">Why Choose Us?</h2>
-  <div class="icon-grid">
-    <div class="icon-box">
-      <i class="fas fa-star"></i>
-      <h4>Trusted & Verified</h4>
-      <p>Reliable listings with transparent processes.</p>
+    <div class="see-more-btn-container text-center mt-5">
+      <a href="for-sale.html" class="btn btn-warning btn-lg rounded-pill px-5 shadow">See More Properties</a>
     </div>
-    <div class="icon-box">
-      <i class="fa-solid fa-bolt"></i>
-      <h4>Fast Process</h4>
-      <p>We value your time with quick and easy services.</p>
-    </div>
-    <div class="icon-box">
-      <i class="fa-solid fa-star"></i>
-      <h4>Top Quality</h4>
-      <p>Premium service and curated property showcases.</p>
-    </div>
-    <div class="icon-box">
-      <i class="fa-solid fa-headset"></i>
-      <h4>24/7 Support</h4>
-      <p>Round-the-clock support from experienced agents.</p>
-    </div>
-    <div class="icon-box">
-      <i class="fa-solid fa-award"></i>
-      <h4>10+ Years Experience</h4>
-      <p>We've helped thousands since 2015.</p>
+  </div>
+</section>
+<section class="why-us py-5">
+  <div class="container text-center">
+    <h2 class="section-title mb-5">Why Choose Us</h2>
+    <p class="lead mx-auto" style="max-width: 700px;">
+      We combine expertise, dedication, and excellent customer service to ensure your real estate journey is smooth and successful.
+    </p>
+  </div>
+</section>
+
+<section class="testimonials-section py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">What Our Clients Say</h2>
+    <div class="row justify-content-center g-4">
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card bg-white bg-opacity-50 backdrop-blur rounded-4 p-4 shadow position-relative">
+          <i class="fa-solid fa-quote-left quote-icon position-absolute top-3 start-3 fs-1 text-warning opacity-25"></i>
+          <p class="testimonial-text fst-italic text-dark mt-5 mb-4">
+            "The team was incredibly professional and helped me find my dream home quickly. Highly recommend!"
+          </p>
+          <div class="testimonial-user d-flex flex-column align-items-center">
+            <img src="https://hips.hearstapps.com/hmg-prod/images/bloomberg--vanity-fair-cocktail-reception-following-the-2011-white-house-correspondents-association-dinner.jpg?crop=1xw:1.0xh;center,top&resize=640:*" alt="Client 1" class="rounded-circle border border-warning mb-2" style="width:70px; height:70px; object-fit:cover;">
+            <span class="fw-semibold text-dark">Sarah L.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card bg-white bg-opacity-50 backdrop-blur rounded-4 p-4 shadow position-relative">
+          <i class="fa-solid fa-quote-left quote-icon position-absolute top-3 start-3 fs-1 text-warning opacity-25"></i>
+          <p class="testimonial-text fst-italic text-dark mt-5 mb-4">
+            "Excellent service and support throughout the buying process. Made everything easy and stress-free."
+          </p>
+          <div class="testimonial-user d-flex flex-column align-items-center">
+            <img src="https://www.qmul.ac.uk/sbm/media/sbm/staff/Arash-Valipour-300x300.jpg" alt="Client 2" class="rounded-circle border border-warning mb-2" style="width:70px; height:70px; object-fit:cover;">
+            <span class="fw-semibold text-dark">Michael B.</span>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-4">
+        <div class="testimonial-card bg-white bg-opacity-50 backdrop-blur rounded-4 p-4 shadow position-relative">
+          <i class="fa-solid fa-quote-left quote-icon position-absolute top-3 start-3 fs-1 text-warning opacity-25"></i>
+          <p class="testimonial-text fst-italic text-dark mt-5 mb-4">
+            "They really care about their clients and go the extra mile. I felt supported every step of the way."
+          </p>
+          <div class="testimonial-user d-flex flex-column align-items-center">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Riz_Ahmed-7658.jpg" alt="Client 3" class="rounded-circle border border-warning mb-2" style="width:70px; height:70px; object-fit:cover;">
+            <span class="fw-semibold text-dark">Jessica K.</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
-<section class="testimonials-section">
-  <h2 class="section-title">What Our Clients Say</h2>
-  <div class="testimonial-grid">
-    <div class="testimonial-card">
-      <div class="quote-icon">“</div>
-      <p class="testimonial-text">The team was incredibly helpful. I found my dream home in no time!</p>
-      <div class="testimonial-user">
-        <img src="https://hips.hearstapps.com/hmg-prod/images/bloomberg--vanity-fair-cocktail-reception-following-the-2011-white-house-correspondents-association-dinner.jpg?crop=1xw:1.0xh;center,top&resize=640:*" alt="Sarah M.">
-        <span>Sarah M.</span>
-      </div>
-    </div>
+<section class="blog bg-light py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Latest From Our Blog</h2>
+    <div class="blog-wrapper d-flex flex-column gap-5 mx-auto" style="max-width: 1000px;">
+      <article class="blog-item d-flex flex-wrap align-items-center gap-4">
+        <div class="blog-image flex-grow-1 flex-md-shrink-0" style="background-image: url('https://internationalfinance.com/wp-content/uploads/2023/08/IFM-Real-Estate.jpg'); height: 220px; border-radius: 12px; background-size: cover; background-position: center;"></div>
+        <div class="blog-text flex-grow-1">
+          <h4 class="mb-2">Boost Property Value</h4>
+          <p class="mb-3">Simple updates and expert advice to raise your home’s worth.</p>
+          <a href="blog-post1.html">Read More &rarr;</a>
+        </div>
+      </article>
 
-    <div class="testimonial-card">
-      <div class="quote-icon">“</div>
-      <p class="testimonial-text">Excellent service, fast response, and very professional agents.</p>
-      <div class="testimonial-user">
-        <img src="https://www.qmul.ac.uk/sbm/media/sbm/staff/Arash-Valipour-300x300.jpg" alt="Jamal W.">
-        <span>Jamal W.</span>
-      </div>
-    </div>
-
-    <div class="testimonial-card">
-      <div class="quote-icon">“</div>
-      <p class="testimonial-text">They managed my property so well. Highly recommend their services.</p>
-      <div class="testimonial-user">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/c/c9/Riz_Ahmed-7658.jpg" alt="Ahmed K.">
-        <span>Ahmed K.</span>
-      </div>
+      <article class="blog-item d-flex flex-wrap flex-row-reverse align-items-center gap-4">
+        <div class="blog-image flex-grow-1 flex-md-shrink-0" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32'); height: 220px; border-radius: 12px; background-size: cover; background-position: center;"></div>
+        <div class="blog-text flex-grow-1 text-md-end">
+          <h4 class="mb-2">Top Neighborhoods in 2025</h4>
+          <p class="mb-3">Discover the trendiest and most livable areas this year.</p>
+          <a href="blog-post2.html">Read More &rarr;</a>
+        </div>
+      </article>
     </div>
   </div>
 </section>
 
-<section class="home-section blog">
-  <h2 class="section-title">From Our Blog</h2>
-  <div class="blog-wrapper">
-    
-    <div class="blog-item">
-      <div class="blog-image" style="background-image: url('https://firsttimebuyer.realtor/sites/default/files/first-time-buyer-s5-share-image-03.jpg');"></div>
-      <div class="blog-text">
-        <h4>5 Tips for First-Time Buyers</h4>
-        <p>Learn how to make smart choices when entering the market.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-
-    <div class="blog-item reverse">
-      <div class="blog-image" style="background-image: url('https://images.unsplash.com/photo-1611892440504-42a792e24d32');"></div>
-      <div class="blog-text">
-        <h4>Top Neighborhoods in 2025</h4>
-        <p>Discover the trendiest and most livable areas this year.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-
-    <div class="blog-item">
-      <div class="blog-image" style="background-image: url('https://internationalfinance.com/wp-content/uploads/2023/08/IFM-Real-Estate.jpg');"></div>
-      <div class="blog-text">
-        <h4>Boost Property Value</h4>
-        <p>Simple updates and expert advice to raise your home’s worth.</p>
-        <a href="#">Read More</a>
-      </div>
-    </div>
-
+<section class="cta highlight-bg text-center py-5">
+  <div class="container">
+    <h2 class="mb-3">Ready to Find Your Dream Home?</h2>
+    <p class="mb-4">Contact us today and let us help you take the next step.</p>
+    <a href="contact.html" class="btn btn-warning btn-lg">Contact Us</a>
   </div>
 </section>
-
-<section class="cta highlight-bg">
-  <h2>Let’s Start Your Real Estate Journey</h2>
-  <p>Connect with us today and find your dream property with ease.</p>
-  <a href="contact.html" class="btn-yellow">Contact Us Now</a>
-</section>
-
 
 <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-col">
-      <img src="../images/companyLogo.png" alt="Logo" class="footer-logo">
-      <p>REALAR Living Solutions offers premium property services tailored to your lifestyle.</p>
-    </div>
-
-    <div class="footer-col">
-      <h4>Quick Links</h4>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="for-sale.html">Properties</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Get in Touch</h4>
-      <ul>
-        <li><i class="fa-solid fa-location-dot"></i> Al-Masyoun, Palestine Trade Tower, Floor 6, Ramallah</li>
-        <li><i class="fa-solid fa-envelope"></i> info@realar.com</li>
-        <li><i class="fa-solid fa-phone"></i> +972 597 693 219</li>
-      </ul>
-    </div>
-
-    <div class="footer-col">
-      <h4>Follow Us</h4>
-      <div class="social-icons">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+  <div class="container footer-container">
+    <div class="row gy-4 justify-content-between">
+      <div class="col-12 col-md-6 col-lg-3 footer-col">
+        <img src="../images/companyLogo.png" alt="Logo" class="footer-logo mb-3">
+        <p>REALAR Living Solutions offers premium property services tailored to your lifestyle.</p>
       </div>
-    </div>
-  </div>
+      <div class="col-6 col-lg-2 footer-col">
+        <h4>Quick Links</h4>
+        <ul class="list-unstyled">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="for-sale.html">Properties</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 footer-col">
+        <h4>Get in Touch</h4>
+        <ul class="list-unstyled">
+          <li><i class="fa-solid fa-location-dot"></i> Al-Masyoun, Palestine Trade Tower, Floor 6, Ramallah</li>
+          <li><i class="fa-solid fa-envelope"></i> info@realar.com</li>
+          <li><i class="fa-solid fa-phone"></i> +972 597 693 219</li>
+        </ul>
+      </div>
 
-  <div class="footer-bottom">
-    <p>© 2025 REALAR Living Solutions. All Rights Reserved.</p>
+      <div class="col-6 col-lg-2 footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom mt-5 pt-3 border-top text-center">
+      <p>© 2025 REALAR Living Solutions. All Rights Reserved.</p>
+    </div>
   </div>
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
